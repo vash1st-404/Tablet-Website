@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  background: black;
+  color: #00ff00;
+  font-family: monospace;
+  overflow: hidden;
+    background-image: url('Star Wars Space Background Image.jpg'); /* Local file or web URL */
+    background-repeat: no-repeat;           /* Prevents the image from tiling */
+    background-size: cover;                 /* Resizes image to fill the screen */
+    background-attachment: fixed;           /* Keeps background from scrolling */
+    background-position: center;      
+
+}
+
+/* viewport window */
+.credits-container {
+  height: 100vh;
+  width: 100%;
+  perspective: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* scrolling text block */
+.credits {
+  position: relative;
+
+  width: 80%;
+  text-align: center;
+  animation: scrollCredits 40s linear forwards;
+}
+
+/* animation */
+@keyframes scrollCredits {
+  0% {
+    transform: translateY(100vh) rotateX(25deg);
+  }
+
+  100% {
+    transform: translateY(-50%) rotateX(25deg);
+  }
+}
+/* text styling */
+h1 {
+  font-size: 3rem;
+
+}
+
+h2 {
+
+  font-size: 1.5rem;
+  color: white;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #00ff00;
+}
+
+.credit-item {
+  transform-origin: center;
+}

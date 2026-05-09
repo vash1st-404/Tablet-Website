@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credits</title>
+  <link rel="stylesheet" href="credits.css">
+</head>
+
+<body>
+
+  <div class="credits-container">
+    <div class="credits">
+      
+      <h1 class="credit-item">Credits</h1>
+
+      <h2 class="credit-item">Project Created By</h2>
+      <p class="credit-item">Vashist Pradhan & Aviral Pradhan</p>
+
+      <h2 class="credit-item">Project Concept</h2>
+      <p class="credit-item">Vashist Pradhan</p>
+      <h2 class="credit-item">Topic Selection</h2>
+      <p class="credit-item">Aviral Pradhan<br>Vashist Pradhan<br>Mr.Umesh Tiwari<br>Mr.Hemanka Joshi</p>
+      <h2 class="credit-item">Research</h2>
+      <p class="credit-item">Vashist Pradhan</p>
+      <h2 class="credit-item">Experimental Design</h2>
+      <p class="credit-item">Vashist Pradhan</p>
+      <h2 class="credit-item">Chart Paper Design</h2>
+      <p class="credit-item">Aviral Pradhan</p>
+      <h2 class="credit-item">Chart Paper Illustration & Layout</h2>
+      <p class="credit-item">Aviral Pradhan</p>
+      <h2 class="credit-item">Ripple Tank Assembly</h2>
+      <p class="credit-item">Vashist Pradhan<br>Mr.Premal Chettri</p>
+      <h2 class="credit-item">Logistics & Handling</h2>
+      <p class="credit-item">Aviral Pradhan</p>
+      <h2 class="credit-item">Primary Funding</h2>
+      <p class="credit-item">Aviral Pradhan</p>
+      <h2 class="credit-item">Digital Simulation Concept (Monte Carlo)</h2>
+      <p class="credit-item">Aviral Pradhan</p>
+      <h2 class="credit-item">Digital Implementation Strategy</h2>
+      <p class="credit-item">Vashist Pradhan</p>
+      <h2 class="credit-item">Code Development</h2>
+      <p class="credit-item">Vashist Pradhan</p>
+      <h2 class="credit-item">Frontend Design</h2>
+      <p class="credit-item">Vashist Pradhan</p>
+      <h2 class="credit-item">Testing & Debugging</h2>
+      <p class="credit-item">Vashist Pradhan</p>
+      <h2 class="credit-item">Mathematical Modeling</h2>
+      <p class="credit-item">Vashist Pradhan</p>
+      <h2 class="credit-item">Documentation & Explanation Writing</h2>
+      <p class="credit-item">Aviral Pradhan<br>Vashist Pradhan</p>
+      <h2 class="credit-item">Presentation Structuring</h2>
+      <p class="credit-item">Vashist Pradhan</p>
+      <h2 class="credit-item">Resource Management</h2>
+      <p class="credit-item">Aviral Pradhan</p>
+      <h2 class="credit-item">Idea Discussions & Iterations</h2>
+      <p class="credit-item">Aviral Pradhan<br>Vashist Pradhan</p>
+      <h2 class="credit-item">Final Assembly of Project</h2>
+      <p class="credit-item">Mr.Premal Chettri<br>Aviral Pradhan<br>Vashist Pradhan</p>
+      <h2 class="credit-item">Quality Checks & Adjustments</h2>
+      <p class="credit-item">Mr.Premal Chettri<br>Mr.Umesh Tiwari<br>Mr.Hemaka Joshi<br>Aviral Pradhan<br>Vashist Pradhan</p>
+      <h2 class="credit-item">Inspiration</h2>
+      <p class="credit-item">The fish drowning in the sea(ripple tank)<br> Trying to measure a circle with a ruler(pi experiments)</p>
+      <h1 class="credit-item">END</h1>
+    </div>
+  </div>
+  <script>
+const items = document.querySelectorAll(".credit-item");
+
+function updateScale() {
+  items.forEach(el => {
+    const rect = el.getBoundingClientRect();
+
+    const screenHeight = window.innerHeight;
+
+    // position from bottom (0 = bottom, 1 = top)
+    const progress = 1 - (rect.top / screenHeight);
+
+    // clamp between 0 and 1
+    const clamped = Math.max(0, Math.min(progress, 1));
+
+    // scale: large at bottom, small at top
+    const scale = 1 - (clamped * 0.4); // adjust 0.6 for strength
+
+  });
+
+  requestAnimationFrame(updateScale);
+}
+
+updateScale();
+</script>
+</body>
+</html>
