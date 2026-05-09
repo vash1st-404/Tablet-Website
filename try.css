@@ -2,7 +2,7 @@ body {
     height: 100%;
     overflow: hidden;
     margin: 0;
-    background: #000000;
+    background: url('Star Wars Space Background Image.jpg') no-repeat cover fixed centre;
     color: rgb(255, 255, 255);
     font-family: 'MyCustomFont';
 }
