@@ -1,15 +1,20 @@
 @font-face{
   font-family:"MyCustomFont";
-  src: url("mokoto-glitch-mark-2.ttf") format("truetype");
+  src: url("./Fonts/mokoto-glitch-mark-2.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'SecondFont';
+  src: url('./Fonts/ARCADECLASSIC.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   margin: 0;
   height: 100vh;
   overflow: hidden;
-
-  background: url("1.png") center / cover no-repeat fixed;
-
+  background-color: #000;
   color: #fff;
 }
 
@@ -30,14 +35,14 @@ body {
 .title {
   margin: 0;
   font-family: 'MyCustomFont';
-  font-size: 10px;
+  font-size: 4vw;
 
   color: #fff;
 
   letter-spacing: 0.1em;
 
   text-shadow:
-    0 0 5px #fff,
+    0 0 2px #fff,
     0 0 20px #49ff18,
     0 0 30px #49ff18,
     0 0 40px #49ff18;
@@ -45,9 +50,10 @@ body {
 
 /* Tagline */
 .tagline {
+  font-family: 'SecondFont';
   color:#49ff18;
-  margin-top: 7rem;
-  font-size: clamp(40px, 3vw,90px);
+  margin-top: 3rem;
+  font-size: 2vw;
 }
 
 /* Side navigation */
@@ -96,8 +102,8 @@ body {
   margin: 0;
 
   transform: translate(
-    8vw,   /* X axis shift */
-    -6vh   /* Y axis shift (negative = upward) */
+    11vw,   /* X axis shift */
+    -8vh   /* Y axis shift (negative = upward) */
   );
 
   font-family: monospace;
@@ -106,7 +112,7 @@ body {
   color: #00ff00;
 
   /* responsive sizing */
-  font-size: clamp(30px, 2.4vh , 60px);
+  font-size: 2.3vh;
 
   line-height: 1.1;
 
