@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'SecondFont';
-  src: url("ARCADECLASSIC.TTF") format('truetype');
+  src: url('ARCADECLASSIC.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
