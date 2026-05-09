@@ -1,0 +1,79 @@
+body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    background-image: url('1.png'); /* Local file or web URL */
+    background-repeat: no-repeat;           /* Prevents the image from tiling */
+    background-size: cover;                 /* Resizes image to fill the screen */
+    background-attachment: fixed;           /* Keeps background from scrolling */
+    background-position: center;
+    color: rgb(255, 255, 255);
+    font-family: 'MyCustomFont';
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./Fonts/Mokoto Glitch Mark 2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Full screen container */
+.title-homescreen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-30vh);
+  text-align: center;
+}
+/* Title */
+.title {
+    color: #ffffff;
+    font-family: url('Mokoto Demo.ttf');
+    letter-spacing: 0.1em;
+    font-size: 100px;
+    margin: 0;
+    background-color: #000000;
+    text-shadow: 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 0 0 80px #49ff18
+}
+
+/* Tagline */
+.tagline {
+    font-size: 1.rem;
+    margin-top: 1rem;
+}
+
+.side-nav {
+  position: fixed;
+  right: -2vw;
+  top: var(--btn-y, 55vh);
+  transform: translateY(-5vh);
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+}
+
+.nav-btn {
+    color: #00ff00;
+    background: #111111;
+    border: 17px ridge #00ff00;
+    font-family: monospace;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+  /* 🔥 responsive font size */
+    font-size: (14px, 1.2vw, 22px);
+
+    padding: 80px 255px;
+/* optional polish */
+border-radius: 50px 0px 0px 0px;
+font-weight: normal;
+}
+
+.nav-btn:hover {
+  background: #00ff00;
+  color: #000000;
+}
