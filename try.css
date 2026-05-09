@@ -1,11 +1,11 @@
 @font-face{
   font-family:"MyCustomFont";
-  src: url("./Fonts/mokoto-glitch-mark-2.ttf") format("truetype");
+  src: url("mokoto-glitch-mark-2.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'SecondFont';
-  src: url('./Fonts/ARCADECLASSIC.TTF') format('truetype');
+  src: url("ARCADECLASSIC.TTF") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
