@@ -1,11 +1,11 @@
 @font-face{
   font-family:"MyCustomFont";
-  src: url("mokoto-glitch-mark-2.ttf") format("truetype");
+  src: url("https://github.com/vash1st-404/Tablet-Website/blob/main/mokoto-glitch-mark-2.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'SecondFont';
-  src: url('ARCADECLASSIC.TTF') format('truetype');
+  src: url('https://github.com/vash1st-404/Tablet-Website/blob/main/ARCADECLASSIC.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
