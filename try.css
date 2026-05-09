@@ -30,7 +30,7 @@ body {
 .title {
   margin: 0;
   font-family: 'MyCustomFont';
-  font-size: clamp(60px, 8vw, 110px);
+  font-size: 60px;
 
   color: #fff;
 
