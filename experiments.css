@@ -1,11 +1,11 @@
-@font-face{
-    font-family:"MyCustomFont";
-    src: url("https://raw.githubusercontent.com/vash1st-404/Tablet-Website/main/Minecraft.ttf") format("truetype");
-}
-
-@font-face{
-    font-family:"SecondFont";
-    src: url("https://raw.githubusercontent.com/vash1st-404/Tablet-Website/main/mokoto-glitch-mark-2.ttf") format("truetype");
+@font-face{ 
+    font-family:"MyCustomFont"; 
+    src: url("./Fonts/Minecraft.ttf") format("truetype"); 
+} 
+    
+@font-face{ 
+    font-family:"SecondFont"; 
+    src: url("./Fonts/mokoto-glitch-mark-2.ttf") format("truetype"); 
 }
 
 body {
@@ -16,23 +16,24 @@ body {
     color: #fff;
 }
 
-.title-homescreen {
+/* NEW: master layout controller */
+.page {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center; /* X-axis centering for everything */
+}
 
-    justify-content: center;   /* vertical centering */
-    align-items: center;       /* horizontal centering */
-
+/* TITLE BLOCK */
+.title-homescreen {
+    margin-top: 2vh; /* 👈 EDIT THIS to control Y-position */
     text-align: center;
-    transform: translateY(-29vh); /* controlled upward shift */
 }
 
 .title {
     font-family: 'SecondFont';
     font-size: 4vw;
     color: #fff;
-
     letter-spacing: 0.1em;
 
     text-shadow:
@@ -42,19 +43,12 @@ body {
         0 0 40px #49ff18;
 }
 
+/* FIXED GAP CONTROL */
 .box {
-    font-family: 'MyCustomFont';
-    position: absolute;
-
-    /* Origin at exact center of screen */
-    left: 50%;
-    top: 50%;
-
-    /* Shift element back by half its own size */
-    transform: translate(-50%, -50%);
-
+    margin-top: 5vh; /* 👈 required spacing */
+    align-self: center;
     width: 50vw;
-    height: 45vh;
+    height: 60vh;
 
     padding: 10px;
 
@@ -62,9 +56,14 @@ body {
     color: #fff;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    font-size: 2.4vw;
+    font-size: 4vw;
+    font-family: 'MyCustomFont';
+}
 
+.box-item {
+    margin: 3.4vh 0; /* 👈 controls spacing between lines */
 }
