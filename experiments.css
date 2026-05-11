@@ -26,7 +26,7 @@ body {
 
 /* TITLE BLOCK */
 .title-homescreen {
-    margin-top: 2vh; /* 👈 EDIT THIS to control Y-position */
+    margin-top: 3.5vh; /* 👈 EDIT THIS to control Y-position */
     text-align: center;
 }
 
@@ -45,10 +45,10 @@ body {
 
 /* FIXED GAP CONTROL */
 .box {
-    margin-top: 5vh; /* 👈 required spacing */
+    margin-top: 4.5vh; /* 👈 required spacing */
     align-self: center;
     width: 50vw;
-    height: 60vh;
+    height: 55vh;
 
     padding: 10px;
 
@@ -60,10 +60,10 @@ body {
     justify-content: center;
     align-items: center;
 
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-family: 'MyCustomFont';
 }
 
 .box-item {
-    margin: 3.4vh 0; /* 👈 controls spacing between lines */
+    margin: 3.1vh 0; /* 👈 controls spacing between lines */
 }
