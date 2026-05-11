@@ -1,0 +1,69 @@
+@font-face{
+    font-family:"MyCustomFont";
+    src: url("./Fonts/Minecraft.ttf") format("truetype");
+}
+
+@font-face{
+    font-family:"SecondFont";
+    src: url("./Fonts/mokoto-glitch-mark-2.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+}
+
+.title-homescreen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;   /* vertical centering */
+    align-items: center;       /* horizontal centering */
+
+    text-align: center;
+    transform: translateY(-29vh); /* controlled upward shift */
+}
+
+.title {
+    font-family: 'SecondFont';
+    font-size: 4vw;
+    color: #fff;
+
+    letter-spacing: 0.1em;
+
+    text-shadow:
+        0 0 2px #fff,
+        0 0 20px #49ff18,
+        0 0 30px #49ff18,
+        0 0 40px #49ff18;
+}
+
+.box {
+    position: absolute;
+
+    /* Origin at exact center of screen */
+    left: 50%;
+    top: 50%;
+
+    /* Shift element back by half its own size */
+    transform: translate(-50%, -50%);
+
+    width: 50vw;
+    height: 45vh;
+
+    padding: 10px;
+
+    background-color: #00ff009c;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.4vw;
+    font-family: 'MyCustomFont';
+}
