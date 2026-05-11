@@ -46,6 +46,7 @@ body {
 /* FIXED GAP CONTROL */
 .box {
     margin-top: 4.5vh; /* 👈 required spacing */
+    font-size: 5vh;
     align-self: center;
     width: 60vw;
     height: 50vh;
@@ -60,7 +61,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    font-size: 4.1vh;
+    
     font-family: 'MyCustomFont';
 }
 
