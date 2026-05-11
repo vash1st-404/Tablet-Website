@@ -43,6 +43,7 @@ body {
 }
 
 .box {
+    font-family: 'MyCustomFont';
     position: absolute;
 
     /* Origin at exact center of screen */
@@ -65,5 +66,5 @@ body {
     align-items: center;
 
     font-size: 2.4vw;
-    font-family: 'MyCustomFont';
+
 }
