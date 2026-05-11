@@ -1,11 +1,11 @@
 @font-face{
     font-family:"MyCustomFont";
-    src: url("./Fonts/Minecraft.ttf") format("truetype");
+    src: url("https://raw.githubusercontent.com/vash1st-404/Tablet-Website/raw/refs/heads/main/Minecraft.ttf") format("truetype");
 }
 
 @font-face{
     font-family:"SecondFont";
-    src: url("./Fonts/mokoto-glitch-mark-2.ttf") format("truetype");
+    src: url("https://raw.githubusercontent.com/vash1st-404/Tablet-Website/main/mokoto-glitch-mark-2.ttf") format("truetype");
 }
 
 body {
